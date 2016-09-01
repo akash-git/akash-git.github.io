@@ -1,0 +1,15 @@
+[Unit]
+Description=Etcd Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=${etcd_data_dir}
+EnvironmentFile=-/etc/kubernetes/etcd.conf
+# set GOMAXPROCS to number of processors
+ExecStart=/bin/bash -c "/opt/kubernetes/bin/etcd"
+
+[Install]
+WantedBy=multi-user.target
+
+

@@ -1,0 +1,15 @@
+[Unit]
+Description=Kubernetes Controller Manager
+Documentation=https://github.com/kubernetes/kubernetes
+After=etcd.service
+After=kube-apiserver.service
+Wants=etcd.service
+Wants=kube-apiserver.service
+
+[Service]
+EnvironmentFile=-/etc/kubernetes/kube-controller-manager
+ExecStart=/opt/kubernetes/bin/kube-controller-manager $KUBE_LOGTOSTDERR $KUBE_LOG_LEVEL $KUBE_MASTER
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
