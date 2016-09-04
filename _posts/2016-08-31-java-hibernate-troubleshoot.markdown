@@ -9,11 +9,13 @@ shortinfo: Few issue in hibernate that occured while project setup. Solutions ar
 
 
 # Mysql connection issue
-**NoRouteToHostException exception raised**
+Some times we encounter **NoRouteToHostException** exception raised
 
->Signals that an error occurred while attempting to connect a socket to a remote address and port. Typically, the remote host cannot be reached because of an intervening firewall, or if an intermediate router is down.
+>Signals that an error occurred while attempting to connect a socket to a remote address and port.
+>
+> Typically, the remote host cannot be reached because of an intervening firewall, or if an intermediate router is down.
 
-Error
+Or Error
 > The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 
 ```java
@@ -29,3 +31,4 @@ echo "1" >/proc/sys/net/ipv4/tcp_tw_reuse
 #    and/or
 echo "1" >/proc/sys/net/ipv4/tcp_tw_recycle
 ```
+
