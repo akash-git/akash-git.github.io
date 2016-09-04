@@ -10,22 +10,23 @@ Kubernetes 1.3 has been released. Kubernetes 1.3 features can be found on [link]
 
 There isnt straight forward installation for kubernetes, you can install using kubernetes scripts for server flavours.
 
-I list down steps to install ```kubernetes _1.3_``` on ```centos _7_```. 
+I list down steps to install `kubernetes _1.3` on `centos 7`.
 
 To fully test kubernetes, we need 3 servers, one  kubernetes master and other 2 as nodes or minions.
 
-> Kubernetes services and dependencies:
-> master services
->   kube-apiserver
->   kube-controller-manager
->   kube-scheduler
+#### Kubernetes services and dependencies:
+1. master services
+    * kube-apiserver
+    * kube-controller-manager
+    * kube-scheduler
 
->- minion services
->    + kube-proxy
->    + kubelet
->- dependencies
->    + etcd - shores all the data for kubernetes as key value store.
->    + flanneld - flanneld is ```SDN``` which routes traffic across different minion containers.
+2. minion services
+    * kube-proxy
+    * kubelet
+
+3. dependencies
+    * etcd - shores all the data for kubernetes as key value store.
+    * flanneld - flanneld is `SDN` which routes traffic across different minion containers.
 
 #### Servers/hosts
 
