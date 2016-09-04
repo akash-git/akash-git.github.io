@@ -1,7 +1,7 @@
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 disqus: akash
 google_analytics: akash
@@ -20,7 +20,7 @@ author:
   email: akashsharmaa@gmail
   github: akash-git
   twitter: aakash1979
-  linkedin: asd123
+  linkedin: aakash1979
   bio: Coder, notes on experiments!
 
 categories_path: categories.html
