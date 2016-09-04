@@ -256,7 +256,9 @@ done
 Kubernetes should be up now, you can test setup using `kubectl` command.
 
 Try to get nodes information like below.
+
 #### kubernetes commands
+
 ```bash
 # get all nodes
 kubectl get nodes
