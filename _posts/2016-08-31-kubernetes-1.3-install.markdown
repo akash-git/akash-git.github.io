@@ -272,6 +272,7 @@ kubectl get nodes
 It can happen if docker was started before flannel service.
 
 To fix this, remove docker0 bridge and restart flanneld and docker daemon.
+
 ```bash
 #delete existing bridge
 systemctl stop docker
