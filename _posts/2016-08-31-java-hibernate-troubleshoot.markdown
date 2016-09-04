@@ -20,7 +20,7 @@ Caused by: java.net.NoRouteToHostException: Cannot assign requested address
     at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
 ```
 
-Fix: 
+Fix:
 ```bash
 echo "1" >/proc/sys/net/ipv4/tcp_tw_reuse
     and/or
