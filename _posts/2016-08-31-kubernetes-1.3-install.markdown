@@ -77,9 +77,7 @@ export KUBERNETES_SRC=/usr/src/kubernetes
 &nbsp;
 
 # Kubernetes installation
-d
 ### Uninstall previous version
-
 ```bash
 # stop services
 for SERVICES in etcd flanneld kube-apiserver kube-controller-manager kube-scheduler kube-proxy kubelet flanneld docker; do
