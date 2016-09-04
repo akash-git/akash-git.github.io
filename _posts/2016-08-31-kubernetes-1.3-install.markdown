@@ -14,17 +14,17 @@ I list down steps to install ```kubernetes _1.3_``` on ```centos _7_```.
 
 To fully test kubernetes, we need 3 servers, one  kubernetes master and other 2 as nodes or minions.
 
->Kubernetes services and dependencies:
->- master services
+> Kubernetes services and dependencies:
+> - master services
 >   + kube-apiserver
 >   + kube-controller-manager
 >   + kube-scheduler
 >- minion services
-    + kube-proxy
-    + kubelet
+>    + kube-proxy
+>    + kubelet
 >- dependencies
-    + etcd - shores all the data for kubernetes as key value store.
-    + flanneld - flanneld is ```SDN``` which routes traffic across different minion containers.
+>    + etcd - shores all the data for kubernetes as key value store.
+>    + flanneld - flanneld is ```SDN``` which routes traffic across different minion containers.
 
 #### Servers/hosts
 
