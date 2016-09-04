@@ -50,7 +50,7 @@ To fully test kubernetes, we need 3 servers, one  kubernetes master and other 2 
 # master
 192.168.166.206 kube-master
 # minions
-192.168.167.61 kube-minion1
+192.168.166.61 kube-minion1
 192.168.166.173 kube-minion2
 ```
 &nbsp;
@@ -171,7 +171,7 @@ update master ip in `/etc/kubernetes/kube-apiserver`
 # few changes according to your server IPs
 # update kube-apiserver configuration
 vi /etc/kubernetes/kube-apiserver
-update > KUBE_ADVERTISE_ADDR="--advertise-address=192.168.166.255"
+update > KUBE_ADVERTISE_ADDR="--advertise-address=192.168.166.206"
 ```
 
 &nbsp;
@@ -220,16 +220,20 @@ vi /etc/sysconfig/docker
 update > DOCKER_OPTIONS="-H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock"
 ```
 
+&nbsp;
+
 #### configure minion
+update kublet configuration in file `/etc/kubernetes/kubelet`.
+Change NODE_HOSTNAME/NODE_ADDRESS to respective server IPs.
+```bash
+vi /etc/kubernetes/kubelet
+update > NODE_HOSTNAME="--hostname-override=192.168.166.61"
+update > NODE_ADDRESS="--address=192.168.166.61"
 ```
- - update kublet configuration
-    + set NODE_HOSTNAME to server IP
-    + set NODE_ADDRESS to server IP
 
+&nbsp;
 
-```
-
-#### starting services
+#### starting kubernetes services on minion1/minion2....
 ```bash
 for SERVICES in kube-proxy kubelet flanneld docker; do
     systemctl restart $SERVICES
@@ -238,17 +242,25 @@ for SERVICES in kube-proxy kubelet flanneld docker; do
 done
 ```
 
+&nbsp;
 
-## kubernetes commands
+### test kubernetes setup
+Kubernetes should be up now, you can test setup using `kubectl` command.
+
+Try to get nodes information like below.
+#### kubernetes commands
 ```bash
 # get all nodes
 kubectl get nodes
-
 ```
 
-## Troubleshoot
-##### docker doesnt get flannel ips
+&nbsp;
 
+## Troubleshoot
+#### docker doesnt get flannel ips
+It can happen if docker was started before flannel service.
+
+To fix this, remove docker0 bridge and restart flanneld and docker daemon.
 ```bash
 #delete existing bridge
 systemctl stop docker
