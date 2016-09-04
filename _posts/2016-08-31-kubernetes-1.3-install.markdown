@@ -231,7 +231,8 @@ update > DOCKER_OPTIONS="-H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock"
 
 #### configure minion
 update kublet configuration in file `/etc/kubernetes/kubelet`.
-Change NODE_HOSTNAME/NODE_ADDRESS to respective server IPs.
+Change `NODE_HOSTNAME/NODE_ADDRESS` to respective server IPs.
+
 ```bash
 vi /etc/kubernetes/kubelet
 update > NODE_HOSTNAME="--hostname-override=192.168.166.61"
