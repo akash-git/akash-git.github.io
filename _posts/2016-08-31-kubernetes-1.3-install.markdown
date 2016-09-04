@@ -77,7 +77,7 @@ export KUBERNETES_SRC=/usr/src/kubernetes
 &nbsp;
 
 # Kubernetes installation
-
+d
 ### Uninstall previous version
 
 ```bash
