@@ -96,11 +96,14 @@ rm -rf /opt/etcd/
 &nbsp;
 
 ## Master and minion servers
-Installations for master and minion servers. Master keeps all the cluster info and schedule pods. Minions are nodes that actually run container services.
+Installations for master and minion servers.
+
+Master keeps all the cluster info and schedule pods. Minions are nodes that actually run container services.
 
 &nbsp;
 
 ### Common packages on master and minion servers
+
 #### install network and utility packages
 ```bash
 yum -y install ntp net-tools telnet screen wget bridge-utils
