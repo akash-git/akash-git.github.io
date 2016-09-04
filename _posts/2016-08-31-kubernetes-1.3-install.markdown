@@ -73,7 +73,8 @@ scurl -o kubernetes.tar.gz https://github.com/kubernetes/kubernetes/releases/dow
 
 tar -xf kubernetes.tar.gz
 
-export KUBERNETES_SRC=/usr/src/kubernetes
+export KUBERNETES_SRC=/usr/src/kubernetes/
+export KUBERNETES_HOME=/usr/src/kubeSystem
 ```
 
 &nbsp;
@@ -135,6 +136,11 @@ rm -rf flannel-0.5.5*
 mkdir -p /opt/kubernetes/bin/ /etc/kubernetes/
 
 # copy all config/system and binary files on all servers
+# getting systemd init files
+cd $KUBERNETES_HOME
+git clone https://github.com/akash-git/akash-git.github.io.git
+cd akash-git.github.io
+
 # copy systemd and config
 cp systemd/* /usr/lib/systemd/system/
 cp config/* /etc/kubernetes/
