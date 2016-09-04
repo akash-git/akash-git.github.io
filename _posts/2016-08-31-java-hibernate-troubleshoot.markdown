@@ -9,6 +9,7 @@ tags: [java, java 8, jvm, hibernate]
 
 # Mysql connection issue
 **NoRouteToHostException exception raised**
+
 >Signals that an error occurred while attempting to connect a socket to a remote address and port. Typically, the remote host cannot be reached because of an intervening firewall, or if an intermediate router is down.
 
 Error
@@ -21,8 +22,9 @@ Caused by: java.net.NoRouteToHostException: Cannot assign requested address
 ```
 
 Fix:
+
 ```bash
 echo "1" >/proc/sys/net/ipv4/tcp_tw_reuse
-    and/or
+#    and/or
 echo "1" >/proc/sys/net/ipv4/tcp_tw_recycle
 ```
