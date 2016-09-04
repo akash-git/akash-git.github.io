@@ -149,6 +149,7 @@ cp $KUBERNETES_SRC/cluster/centos/node/bin/* /opt/kubernetes/bin
 &nbsp;
 
 ### master setup
+
 #### installing etcd
 ```bash
 mkdir -p /var/lib/etcd/ /etc/etcd/
@@ -172,6 +173,7 @@ curl -L http://kube-master:2379/v2/keys/coreos.com/network/config -XPUT --data '
 
 #### configure master
 update master ip in `/etc/kubernetes/kube-apiserver`
+
 ```bash
 # few changes according to your server IPs
 # update kube-apiserver configuration
@@ -262,6 +264,7 @@ kubectl get nodes
 &nbsp;
 
 ## Troubleshoot
+
 #### docker doesnt get flannel ips
 It can happen if docker was started before flannel service.
 
