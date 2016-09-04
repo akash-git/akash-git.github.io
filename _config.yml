@@ -3,6 +3,12 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
+kramdown:
+   auto_ids: true
+#gfm_quirks:
+lsi:         false
+
+
 disqus: akash
 google_analytics: akash
 title: Akash

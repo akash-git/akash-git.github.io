@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Install kubernetes 1.3 on centos 7!"
+title:  "Installing kubernetes 1.3 on centos 7!"
 date:   2016-08-31 14:17:06 +0530
 category: containers
 tags: [kubernetes, docker, containers]
@@ -16,9 +16,9 @@ To fully test kubernetes, we need 3 servers, one  kubernetes master and other 2 
 
 >Kubernetes services and dependencies:
 >- master services
-    + kube-apiserver
-    + kube-controller-manager
-    + kube-scheduler
+>   + kube-apiserver
+>   + kube-controller-manager
+>   + kube-scheduler
 >- minion services
     + kube-proxy
     + kubelet
