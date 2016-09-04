@@ -4,7 +4,7 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 kramdown:
-   auto_ids: true
+  auto_ids: true
 #gfm_quirks:
   footnote_nr:    1
   entity_output:  as_char
@@ -13,7 +13,8 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
-lsi:         false
+
+#lsi:         false
 
 
 disqus: akash
