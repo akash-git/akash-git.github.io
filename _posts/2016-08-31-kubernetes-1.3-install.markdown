@@ -271,7 +271,7 @@ kubectl get nodes
 #### docker doesnt get flannel ips
 It can happen if docker was started before flannel service.
 
-To fix this, remove docker0 bridge and restart flanneld and docker daemon.
+To fix this, remove `docker0` bridge and restart flanneld and docker daemon.
 
 ```bash
 #delete existing bridge
