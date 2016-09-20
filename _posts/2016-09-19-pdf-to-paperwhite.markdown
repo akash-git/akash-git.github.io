@@ -47,6 +47,10 @@ k2pdfopt book.pdf
 ### Convert to azw3:
 Use calibre to convert PDF to AZW3 and copy to paperwhite.
 
+&nbsp;
+
+&nbsp;
+
 
 
 
