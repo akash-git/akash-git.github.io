@@ -17,6 +17,10 @@ kramdown:
 #lsi:         false
 
 
+domain_url: "http://www.akashsharma.me"
+
+redirect_to: "http://www.akashsharma.me"
+
 disqus: www-akashsharma-me
 google_analytics: akash
 title: Akash
@@ -44,3 +48,6 @@ BASE_PATH:
 
 gems:
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
