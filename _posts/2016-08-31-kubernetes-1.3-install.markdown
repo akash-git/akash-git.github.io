@@ -3,6 +3,7 @@ layout: post
 title:  "Installing kubernetes 1.3 on centos 7!"
 date:   2016-08-31 14:17:06 +0530
 category: containers
+comments: true
 tags: [kubernetes, docker, containers]
 shortinfo: This post list down the steps to install kubernetes 1.3 on centos 7.
 description: steps to install kubernetes 1.3 on centos 7 with docker containerized application.
