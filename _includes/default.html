@@ -6,6 +6,10 @@
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
 	{% endif %}
+
+	{% if page.canonical_url %}
+		<link rel="canonical" href="{{ site.domain_url }}/{{ page.canonical_url }}" />
+	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
 
 	<!-- Enable responsive viewport -->
@@ -31,6 +35,8 @@
 	-->
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
+
+	{% seo %}
 </head>
 
 <body>
