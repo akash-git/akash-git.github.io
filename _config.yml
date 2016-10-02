@@ -16,6 +16,7 @@ kramdown:
 
 #lsi:         false
 
+permalink: none
 
 domain_url: "http://www.akashsharma.me"
 
