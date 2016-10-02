@@ -3,10 +3,12 @@ layout: post
 title:  "Pdf to paperwhite format"
 date:   2016-09-19 14:17:06 +0530
 category: tools
-canonical_url: tools/pgf-to-paperwhite-format.html
+canonical_url: tools/pdf-to-paperwhite-format.html
 tags: [pdf, paperwhite, k2pdf, azw3, linux]
 shortinfo: Converting pdf to paperwhite format.
 ---
+
+
 ### Download
 Download k2pdfopt from link: [k2pdfopt site](http://www.willus.com/k2pdfopt/)
 Download calibre from link: [calibre site](https://calibre-ebook.com/download)
