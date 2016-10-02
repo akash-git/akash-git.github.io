@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Pdf to paperwhite"
+title:  "Pdf to paperwhite format"
 date:   2016-09-19 14:17:06 +0530
 category: tools
+canonical_url: tools/pgf-to-paperwhite-format.html
 tags: [pdf, paperwhite, k2pdf, azw3, linux]
 shortinfo: Converting pdf to paperwhite format.
 ---
