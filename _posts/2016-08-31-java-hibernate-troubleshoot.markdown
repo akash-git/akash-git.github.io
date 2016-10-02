@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Java 8 hibernate troubleshoot"
+title:  "Java 8 hibernate troubleshooting"
 date:   2016-08-31 14:17:06 +0530
-category: troubleshooting
+category: java
+canonical_url: java/hibernate-troubleshoot.html
 tags: [java, java 8, jvm, hibernate]
 shortinfo: Few issue in hibernate that occured while project setup. Solutions are provided for the issues.
 ---
