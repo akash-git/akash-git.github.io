@@ -3,7 +3,9 @@ layout: page
 tagline:
 ---
 
-{% for post in paginator.posts %}
+{% assign sorted_pages = (paginator.posts | sort:"order") %}
+
+{% for post in sorted_pages %}
 
 <article class="home">
 

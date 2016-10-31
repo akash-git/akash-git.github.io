@@ -6,6 +6,7 @@ category: tools
 canonical_url: tools/pdf-to-paperwhite-format.html
 tags: [pdf, paperwhite, k2pdf, azw3, linux]
 shortinfo: Converting pdf to paperwhite format.
+order: 500
 ---
 
 
