@@ -19,14 +19,14 @@ NODE_PORT="--kubelet-port=10250"
 
 # --advertise-address=<nil>: The IP address on which to advertise
 # the apiserver to members of the cluster.
-KUBE_ADVERTISE_ADDR="--advertise-address=192.168.166.255"
+KUBE_ADVERTISE_ADDR="--advertise-address=192.168.100.100"
 
 # --allow-privileged=false: If true, allow privileged containers.
 KUBE_ALLOW_PRIV="--allow-privileged=false"
 
 # --service-cluster-ip-range=<nil>: A CIDR notation IP range from which to assign service cluster IPs.
 # This must not overlap with any IP ranges assigned to nodes for pods.
-KUBE_SERVICE_ADDRESSES="--service-cluster-ip-range=10.254.0.0/16"
+KUBE_SERVICE_ADDRESSES="--service-cluster-ip-range=10.100.0.0/16"
 
 # --admission-control="AlwaysAdmit": Ordered list of plug-ins
 # to do admission control of resources into cluster.
