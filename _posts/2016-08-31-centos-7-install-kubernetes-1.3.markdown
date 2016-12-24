@@ -177,7 +177,7 @@ systemctl enable etcd
 systemctl start etcd
 
 # save flannel config to etcd
-curl -L http://kube-master:2379/v2/keys/coreos.com/network/config -XPUT --data '{"Network": "10.254.0.0/16","SubnetLen": 24,"SubnetMin": "10.254.50.0","SubnetMax": "10.254.199.0","Backend": {"Type": "vxlan","VNI": 1}}'
+curl -L http://kube-master:2379/v2/keys/coreos.com/network/config -XPUT --data '{"Network": "10.100.0.0/16","SubnetLen": 24,"SubnetMin": "10.100.50.0","SubnetMax": "10.100.199.0","Backend": {"Type": "vxlan","VNI": 1}}'
 ```
 
 &nbsp;
@@ -189,7 +189,7 @@ update master ip in `/etc/kubernetes/kube-apiserver`
 # few changes according to your server IPs
 # update kube-apiserver configuration
 vi /etc/kubernetes/kube-apiserver
-update > KUBE_ADVERTISE_ADDR="--advertise-address=192.168.166.206"
+update > KUBE_ADVERTISE_ADDR="--advertise-address=192.168.100.100"
 ```
 
 &nbsp;
