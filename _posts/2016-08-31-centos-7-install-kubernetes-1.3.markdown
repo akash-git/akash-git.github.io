@@ -53,10 +53,10 @@ To fully test kubernetes, we need 3 servers, one  kubernetes master and other 2 
 
 ```
 # master
-192.168.166.206 kube-master
+192.168.100.100 kube-master
 # minions
-192.168.166.61 kube-minion1
-192.168.166.173 kube-minion2
+192.168.100.1 kube-minion1
+192.168.100.2 kube-minion2
 ```
 &nbsp;
 
