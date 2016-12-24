@@ -21,7 +21,7 @@ KUBELET_API_SERVER="--api-servers=http://kube-master:8080"
 KUBE_ALLOW_PRIV="--allow-privileged=false"
 
 # Add your own!
-KUBELET_ARGS="--cluster-domain=kube.infoedge --cluster-dns=10.254.55.15 --max-pods=100"
+KUBELET_ARGS="--cluster-domain=kube.cluster --cluster-dns=10.254.55.15 --max-pods=100"
 
 KUBELET_PORT="--port=10250"
 KUBELET_ADDRESS="--address=0.0.0.0"
