@@ -5,13 +5,13 @@ KUBE_LOGTOSTDERR="--logtostderr=true"
 KUBE_LOG_LEVEL="--v=4"
 
 # --address=0.0.0.0: The IP address for the Kubelet to serve on (set to 0.0.0.0 for all interfaces)
-NODE_ADDRESS="--address=192.168.166.255"
+NODE_ADDRESS="--address=192.168.100.1"
 
 # --port=10250: The port for the Kubelet to serve on. Note that "kubectl logs" will not work if you set this flag.
 NODE_PORT="--port=10250"
 
 # --hostname-override="": If non-empty, will use this string as identification instead of the actual hostname.
-NODE_HOSTNAME="--hostname-override=192.168.166.255"
+NODE_HOSTNAME="--hostname-override=192.168.100.1"
 
 # --api-servers=[]: List of Kubernetes API servers for publishing events, 
 # and reading pods and services. (ip:port), comma separated.
@@ -21,7 +21,7 @@ KUBELET_API_SERVER="--api-servers=http://kube-master:8080"
 KUBE_ALLOW_PRIV="--allow-privileged=false"
 
 # Add your own!
-KUBELET_ARGS="--cluster-domain=kube.cluster --cluster-dns=10.254.55.15 --max-pods=100"
+KUBELET_ARGS="--cluster-domain=kube.cluster --cluster-dns=10.100.1.1 --max-pods=100"
 
 KUBELET_PORT="--port=10250"
 KUBELET_ADDRESS="--address=0.0.0.0"
