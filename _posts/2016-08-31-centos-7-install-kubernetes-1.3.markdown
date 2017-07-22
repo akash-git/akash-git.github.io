@@ -8,7 +8,7 @@ canonical_url: containers/centos-7-kubernetes-1-3-install.html
 tags: [kubernetes, docker, containers, kubernetes 1.3, centos 7, docker cluster]
 shortinfo: This post list down the steps to install kubernetes 1.3 on centos 7.
 description: steps to install kubernetes 1.3 on centos 7 with docker containerized application.
-order: 1
+order: 2
 ---
 
 
