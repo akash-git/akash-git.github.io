@@ -18,9 +18,9 @@ kramdown:
 
 permalink: none
 
-domain_url: "http://www.akashsharma.me"
+domain_url: "https://www.akashsharma.me"
 
-redirect_to: "http://www.akashsharma.me"
+redirect_to: "https://www.akashsharma.me"
 
 disqus: www-akashsharma-me
 google_analytics: akash
@@ -36,7 +36,8 @@ defaults:
 description: Notes on experiments
 author:
   name: akash
-  email: akashsharmaa@gmail
+  email: akashsharmaa@gmail.com
+  email_md5: 4bd5d8886933b4a5b3297257b2451a24
   github: akash-git
   twitter: aakash1979
   linkedin: aakash1979
@@ -47,7 +48,7 @@ tags_path: tags.html
 
 BASE_PATH:
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-redirect-from
